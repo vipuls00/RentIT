@@ -1,0 +1,246 @@
+
+  
+  h1 {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #06D85F;
+    margin: 80px 0;
+  }
+  
+  .box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 40px auto;
+    /* padding: 20px; */
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  .popup2{
+    margin: 40px auto;
+    margin-top: 100px;
+    /* padding: 20px; */
+    background: #fff;
+    border-radius: 5px;
+    width: 25%;
+    position: relative;
+    transition: all 5s ease-in-out;
+   
+  }
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close , .popup2 .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    z-index: 100;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 60%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+.hedding {
+    font-size: 20px;
+    color: #ab8181;
+}
+
+.main-section {
+    width: 100%;
+}
+
+.left-side-product-box img {
+    width: 100%;
+}
+
+.left-side-product-box .sub-img img {
+    margin-top: 5px;
+    width: 83px;
+    height: 100px;
+}
+
+.right-side-pro-detail span {
+    font-size: 15px;
+}
+
+.right-side-pro-detail p {
+    font-size: 25px;
+    color: #a1a1a1;
+}
+
+.right-side-pro-detail .price-pro {
+    color: #E45641;
+}
+
+.right-side-pro-detail .tag-section {
+    font-size: 18px;
+    color: #5D4C46;
+}
+
+.pro-box-section .pro-box img {
+    width: 100%;
+    height: 200px;
+}
+
+/* @media (min-width:360px) and (max-width:640px) {
+    .pro-box-section .pro-box img {
+        height: auto;
+    }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body  { 
+  height: 100vh;
+  display: flex;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Khand', sans-serif;   
+}        
+
+.wrapperAlert {
+  width: 100%;
+  /* height: 60%; */
+  overflow: hidden;
+  border-radius: 12px;
+  border: thin solid #ddd;           
+}
+
+.topHalf {
+  width: 100%;
+  color: green;
+  overflow: hidden;
+  min-height: 250px;
+  position: relative;
+  padding: 40px 0;
+  /* background: rgb(0,0,0); */
+  /* background: -webkit-linear-gradient(45deg, #019871, #a0ebcf); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.topHalf p {
+  margin-bottom: 30px;
+}
+svg {
+  fill: green;
+}
+.topHalf h1 {
+  font-size: 2.25rem;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  text-shadow: 0 2px rgba(128, 128, 128, 0.6);
+}
+        
+/* Original Author of Bubbles Animation -- https://codepen.io/Lewitje/pen/BNNJjo */
+
+/* @-webkit-keyframes square {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-500px) rotate(600deg); }
+}
+@keyframes square {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-500px) rotate(600deg); }
+} */
+
+.bottomHalf {
+  align-items: center;
+  padding: 35px;
+}
+.bottomHalf p {
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;            
+  padding: 10px 18px;            
+  background-color: #019871;
+  text-shadow: 0 1px rgba(128, 128, 128, 0.75);
+}
+button:hover {
+  background-color: #85ddbf;
+}
+.close2{
+  position: absolute;
+  
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  z-index: 100;
+}
